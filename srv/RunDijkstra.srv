@@ -1,0 +1,19 @@
+# RunDijkstra.srv
+
+# request definition
+# this section defines the input parameters required to complete the service.
+
+# threat field
+ThreatField threat
+
+# initial and target vertex indicies
+int64 vertex_init
+int64 vertex_trgt
+
+---
+
+# response definition
+# this section defines the output parameters that the service will return.
+
+# vertex indices of optimal path
+int64[] indices

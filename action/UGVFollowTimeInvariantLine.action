@@ -1,0 +1,26 @@
+# UGVFollowTimeInvariantLine.action
+
+# goal definition
+# this section defines the input parameters required to complete the action.
+
+# initial vertex
+geometry_msgs/Point init
+
+# target vertex
+geometry_msgs/Point trgt
+
+---
+
+# result definition
+# this section defines the output parameters after executing the goal.
+
+# success of the action
+bool success
+
+---
+
+# feedback definition
+# this section provides feedback during the execution of the goal.
+
+# current local error
+mess2_msgs/UGVState error

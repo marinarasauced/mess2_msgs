@@ -1,0 +1,23 @@
+# UGVFaceTimeInvariantHeading.action
+
+# goal definition
+# this section defines the input parameters required to complete the action.
+
+# target heading
+float64 trgt
+
+---
+
+# result definition
+# this section defines the output parameters after executing the goal.
+
+# success of the action
+bool success
+
+---
+
+# feedback definition
+# this section provides feedback during the execution of the goal.
+
+# current local error
+float64 error

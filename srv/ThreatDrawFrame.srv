@@ -1,0 +1,14 @@
+# RunDijkstra.srv
+
+# request definition
+# this section defines the input parameters required to complete the service.
+
+ThreatElementArray edges
+ThreatElementArray vertices
+
+---
+
+# response definition
+# this section defines the output parameters that the service will return.
+
+bool success
