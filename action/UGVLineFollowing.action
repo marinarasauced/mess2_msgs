@@ -1,0 +1,26 @@
+# UGVLineFollowing.action
+
+# goal definition
+# this action's goal contains the actors target point and action specific parameters pertaining to the vehicle's dynamics and control.
+
+float64 k1          # the linear control input gain
+float64 k2          # the angular control input gain
+float64 v_ratio     # a ratio limiting the vehicle's maximum velocities; i.e., if the absolute maximum allowable linear velocity is 1.0 m/s and v_ratio is 0.7, the vehicle's maximum linear velocity during the action is 0.7 m/s.
+geometry_msgs/Pose2D tolerances     # the allowable rotational and translational error toleranaces
+geometry_msgs/Point boundaries_min  # the lower boundaries of the three-dimensional space the vehicle is allowed to operate within (based on localization x, y, z).
+geometry_msgs/Point boundaries_max  # the upper boundaries of the three-dimensional space the vehicle is allowed to operate within (based on localization x, y, z).
+geometry_msgs/Pose2D x_target       # the target state of the vehicle
+
+---
+
+# result definition
+# this action's result contains a bool determining the success of the transition.
+
+bool success
+
+---
+
+# feedback definition
+# this action's feedback contains the current local error during a transition.
+
+geometry_msgs/Pose2D error

@@ -12,31 +12,11 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 
-  # algorithms
-  "msg/Edge.msg"
-  "msg/EdgeArray.msg"
-  "msg/Vertex.msg"
-  "msg/VertexArray.msg"
-  "msg/ThreatField.msg"
-  "msg/ThreatElement.msg"
-  "msg/ThreatElementArray.msg"
-
-  "srv/ThreatDrawFrame.srv"
-  
-  "srv/RunDijkstra.srv"
-
   # plugins
   "msg/EulerAngles.msg"
-  
-  # uav
-  "msg/UAVState.msg"
-  "action/UAVCalibrate.action"
-  
+
   # ugv
-  "msg/UGVState.msg"
-  "action/UGVCalibrate.action"
-  "action/UGVFaceTimeInvariantHeading.action"
-  "action/UGVFollowTimeInvariantLine.action"
+  "action/UGVLineFollowing.action"
 
   DEPENDENCIES geometry_msgs std_msgs
 )
