@@ -1,9 +1,0 @@
-{
-    "python.autoComplete.extraPaths": [
-        "/home/mess2/Desktop/mess2/ros2/build/mess2_logger_py",
-        "/home/mess2/Desktop/mess2/ros2/install/mess2_logger_py/lib/python3.10/site-packages",
-        "/home/mess2/Desktop/mess2/ros2/install/flir_camera_msgs/local/lib/python3.10/dist-packages",
-        "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
-}
