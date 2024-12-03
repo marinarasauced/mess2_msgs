@@ -1,0 +1,23 @@
+# VICONCalibrate.action
+
+
+# goal definition
+# this action's goal contain the object's name and the number of measurements to record.
+
+string name         # the name of the object in VICON Tracker.
+int64 num_measurements  # the number of measurements to sample at each point.
+
+---
+
+# result definition
+# this action's result contains a bool determining the success of the transition and the resulting difference quaternion.
+
+bool success        # whether the calibration was successful
+geometry_msgs/Quaternion quat_diff  # the difference quaternion used by the vicon driver as an orientation calibration
+
+---
+
+# feedback definition
+# this action's feedback contains the calibration process as a percentage.
+
+float64 progress
